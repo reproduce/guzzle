@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+    proxy:
+        image: sameersbn/squid:3.3.8-20
+
+    php:
+        image: php:7.0
+        links:
+            - proxy
+        volumes:
+            - ./:/app
+        working_dir: /app

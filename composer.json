@@ -1,0 +1,14 @@
+{
+    "name": "reproduce/guzzle",
+    "description": "Guzzle issue reproduction",
+    "require": {
+        "guzzlehttp/guzzle": "^5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Márk Sági-Kazár",
+            "email": "mark.sagikazar@gmail.com"
+        }
+    ]
+}
