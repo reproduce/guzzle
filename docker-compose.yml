@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+    server:
+        image: php:7.0
+        command: php -S 0.0.0.0:80 server.php
+        volumes:
+            - ./:/app
+        working_dir: /app
+
+    reproduce:
+        image: php:7.0
+        command: php run.php
+        links:
+            - server
+        volumes:
+            - ./:/app
+        working_dir: /app
