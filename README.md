@@ -18,7 +18,7 @@ $ docker-compose run --rm reproduce
 
 ## Results
 
-The correct body is returned.
+After examining the request options provided by the reporter: the correct body is returned, when the stream option is `false`.
 
 ```
 HTTP/1.1 500 Internal Server Error
